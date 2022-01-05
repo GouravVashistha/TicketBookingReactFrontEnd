@@ -38,7 +38,7 @@ class Login extends Component {
                                     this.setState({ password: e.target.value })
                                 }} /><br /> */}
 
-                                <Button className='newbtn' color="primary" size="sm" onClick={() => {
+                                <Button className='newbtn' variant="btn btn-primary btn-block" color="primary" size="sm" onClick={() => {
                                     var user = {
                                         emailId: this.state.emailId,
                                         password: this.state.password
@@ -55,7 +55,7 @@ class Login extends Component {
                                     })
 
                                     console.log(user)
-                                }}>Save</Button>
+                                }}>Login</Button>
                             </Form>
                         </Col>
 
