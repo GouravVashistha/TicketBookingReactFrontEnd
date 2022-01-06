@@ -59,7 +59,7 @@ function Headerfile() {
               Home
             </Link>
 
-            <Link to="/contact" className={classes.link}>
+            <Link to="/shows" className={classes.link}>
               Movies
             </Link>
             <Link to="/about" className={classes.link}>

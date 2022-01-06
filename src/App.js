@@ -4,18 +4,23 @@ import About from './MainComp/About';
 import Login from './Componenets/Login/Login';
 import Registration from './Componenets/Login/Registration'
 import Headerfile from './Componenets/Header/Navbar';
+import Shows from './MainComp/Shows';
+
+
 
 function App() {
   return (
     <div className="App">
       <Headerfile />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registration />} />
+        <Route path="/shows" element={<Shows />} />
 
       </Routes>
+
 
     </div>
   );
