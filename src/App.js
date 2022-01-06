@@ -5,6 +5,7 @@ import Login from './Componenets/Login/Login';
 import Registration from './Componenets/Login/Registration'
 import Headerfile from './Componenets/Header/Navbar';
 import Shows from './MainComp/Shows';
+import Adminlogin from './admin/Adminlogin';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/shows" element={<Shows />} />
+        <Route path="/adminlogin" element={<Adminlogin />} />
 
       </Routes>
 

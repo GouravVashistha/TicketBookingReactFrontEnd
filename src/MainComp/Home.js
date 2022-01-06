@@ -1,22 +1,16 @@
 import React, { Component } from 'react'
-import { Button, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import BootstrapMultiCarousal from '../Componenets/BootstrapCarousal/BootstrapCarousal'
 
+import Carousal from '../Componenets/Carousal/Carousal'
+import RowAndColumnSpacing from '../Componenets/MoviesCard/avengers'
 
 export default class Home extends Component {
     render() {
         return (
             <div>
+                <Carousal />
 
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <h1>hiii</h1>
-                <Link to='/login'>User login</Link>
-
+                <RowAndColumnSpacing />
             </div>
         )
     }

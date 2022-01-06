@@ -1,11 +1,14 @@
 import React from 'react'
 import './style.css'
 import Slider from 'react-slick'
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-
+//import "slick-carousel/slick/slick.css"; 
+//import "slick-carousel/slick/slick-theme.css";
+// import img1 from '../assets/sec.png';
+// import img2 from '../assets/three.png';
+// import img3 from '../assets/four.jpg';
 import { data } from '../../data';
 import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons';
+import { Container } from '@material-ui/core';
 
 const PreviousBtn = (props) => {
     const { className, onClick } = props
@@ -28,14 +31,15 @@ const NextBtn = (props) => {
 };
 
 const Carousal = () => {
-
     return (
         <div style={{ margin: "30px" }}>
 
             <Slider
+
                 autoplay
-                autoplaySpeed={1000}
+                autoplaySpeed={2000}
                 dots
+
                 initialSlide={1}
                 prevArrow={<PreviousBtn />}
                 nextArrow={<NextBtn />}
@@ -43,7 +47,7 @@ const Carousal = () => {
                 {
                     data.map(item => (
                         <div className="">
-                            <img className='Slider__img' src={item} alt="" style={{ width: "100%", height: "40vh" }} />
+                            <img className='Slider__img' src={item} alt="" style={{ width: "100%", height: "50vh" }} />
                         </div>
                     ))
                 }
