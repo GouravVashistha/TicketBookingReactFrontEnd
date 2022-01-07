@@ -6,6 +6,7 @@ import './Login.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import axios from 'axios'
+import Headerfile from '../Header/Navbar';
 class Registration extends Component {
     constructor() {
         super()
@@ -29,6 +30,7 @@ class Registration extends Component {
     render() {
         return (
             <div>
+                <Headerfile />
                 <Container className='mt-5'>
                     <Row>
                         <Col lg={5} md={6} sm={12} className=' firstcont text-center'>

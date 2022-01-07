@@ -54,7 +54,7 @@ function Headerfile() {
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-            <Link to="/" className={classes.link}>
+            <Link to="/Home" className={classes.link}>
               <Home />
               Home
             </Link>
@@ -72,7 +72,7 @@ function Headerfile() {
             <Link to="/login" className={classes.link}>
               Login
             </Link>
-            <Link to="/register" className={classes.link}>
+            <Link to="/registration" className={classes.link}>
               Signup
             </Link>
           </div>

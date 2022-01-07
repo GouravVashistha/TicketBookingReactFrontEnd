@@ -1,7 +1,8 @@
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown, Offcanvas } from "react-bootstrap";
-
+import { useNavigate } from 'react-router-dom';
 function AdminNav() {
   const admin = "Admin Pannel"
+  const navigate = useNavigate();
   return (
 
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -18,7 +19,10 @@ function AdminNav() {
           </Nav>
           <Nav>
             <Nav.Link href="#deets">Add More Features</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            <Nav.Link onClick={() => {
+              localStorage.removeItem('email')
+              navigate("/admin")
+            }}>
               Logout
             </Nav.Link>
           </Nav>
