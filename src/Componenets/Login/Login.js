@@ -15,6 +15,8 @@ class Login extends Component {
             error: ""
         }
     }
+
+
     render() {
         return (
             <>
@@ -23,9 +25,7 @@ class Login extends Component {
                         <Col lg={5} md={6} sm={12} className=' firstcont text-center'>
                             <img className='icon-img' src={img1} alt='loginImg' />
                             <Form>
-                                {/* <Form.Control className="mb-3" type="email" placeholder="Mail Id" onChange={(e) => {
-                                    this.setState({ emailId: e.target.value })
-                                }} /> */}
+
                                 <Form.Control className="mb-3" type="email" placeholder="Enter email" onChange={(e) => {
                                     this.setState({ emailId: e.target.value })
                                 }} />
@@ -34,20 +34,7 @@ class Login extends Component {
                                     this.setState({ password: e.target.value })
                                 }} />
 
-
-                                {/* <input placeholder="Enter Mail" type='text' onChange={(e) => {
-                                    this.setState({ emailId: e.target.value })
-                                }} /><br /> */}
-
-                                {/* <Form.Control className="mb-3" type="password" placeholder="Password" onChange={(e) => {
-                                    this.setState({ password: e.target.value })
-                                }} /> */}
-
-                                {/* <input placeholder="Enter Mail" type='password' onChange={(e) => {
-                                    this.setState({ password: e.target.value })
-                                }} /><br /> */}
-
-                                <Button className='newbtn' type="submit" variant="btn btn-primary btn-block" color="primary" size="sm" onClick={() => {
+                                <Button className='newbtn' variant="btn btn-primary btn-block" color="primary" size="sm" onClick={() => {
                                     var user = {
                                         emailId: this.state.emailId,
                                         password: this.state.password
@@ -58,6 +45,9 @@ class Login extends Component {
                                         }
                                     }
                                     axios.post("http://localhost:8080/Userlogin", user, options).then((res) => {
+
+                                        localStorage.getItem(user)
+
                                         console.log(res.data)
                                     }).catch((err) => {
                                         console.log("error has occured")

@@ -43,7 +43,7 @@ function Headerfile() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" className="app">
+    <AppBar position="static" >
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>

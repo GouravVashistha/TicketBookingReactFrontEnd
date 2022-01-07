@@ -6,20 +6,24 @@ import Registration from './Componenets/Login/Registration'
 import Headerfile from './Componenets/Header/Navbar';
 import Shows from './MainComp/Shows';
 import Adminlogin from './admin/Adminlogin';
+import AdminHome from './admin/AdminHome';
+import Homepage from './MainComp/Homepage';
+// import HomePage from './MainComp/HomePage';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Headerfile />
+
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Registration />} />
-        <Route path="/shows" element={<Shows />} />
-        <Route path="/adminlogin" element={<Adminlogin />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/admin" element={<Adminlogin />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
+
+        <Route path="/admin/home" element={<AdminHome />} />
+
 
       </Routes>
 

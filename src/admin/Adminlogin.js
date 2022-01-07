@@ -1,14 +1,25 @@
-import React, { Component } from 'react'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./admin.css";
 
-export default class Adminlogin extends Component {
-    render() {
-        return (
-            <div>
-                <h1>
+function Adminlogin(props) {
 
-                </h1>
+    return (
+        <div className="admin">
 
-            </div>
-        )
-    }
+            <form>
+                <h1>Admin Login</h1>
+                <div className="formInput" >
+
+                    <input className="mt-2" type="email" placeholder="Email" />
+
+
+                    <input className="mt-2 " type="passWord" placeholder="Password" />
+
+                    <Link to="/admin/home" className="btn loginbtn">Login</Link>
+                </div>
+            </form>
+        </div>
+    );
 }
+export default Adminlogin;

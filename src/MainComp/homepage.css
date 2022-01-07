@@ -1,0 +1,56 @@
+.app {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100vh;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../assets/movie.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+}
+.btnclick{
+    margin: 10px;
+    width:200px;
+
+    height: 50px;
+
+    padding: 10px;
+
+    border: none;
+
+    background-color: rgba(139, 36, 36, 0.685);
+
+    color: rgba(255, 255, 255, 0.767);
+
+    border-radius: 5px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.btnclick:hover{
+    width:250px;
+    height:60px;
+}
+.header{
+    font-size: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgrey;
+    font-weight:600;
+    
+}
