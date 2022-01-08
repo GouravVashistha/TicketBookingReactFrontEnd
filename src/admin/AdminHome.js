@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import GetAllShows from '../Componenets/MovieShow/GetAllShows'
 import AdminNav from './AdminNav'
 
 export default class AdminHome extends Component {
@@ -6,7 +7,7 @@ export default class AdminHome extends Component {
         return (
             <div>
                 <AdminNav />
-                <h1>hii home</h1>
+                <GetAllShows />
             </div>
         )
     }

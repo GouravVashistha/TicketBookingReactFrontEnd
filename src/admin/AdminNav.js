@@ -7,13 +7,14 @@ function AdminNav() {
 
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">{admin}</Navbar.Brand>
+        <Navbar.Brand href="/admin/home">{admin}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Add Movies</Nav.Link>
+            <Nav.Link href="/admin/addmovie">Add Movies</Nav.Link>
             <Nav.Link href="#pricing">See Movies List</Nav.Link>
-            <Nav.Link href="#pricing">Add Hall</Nav.Link>
+            <Nav.Link href="/admin/addshow">Add shows</Nav.Link>
+            <Nav.Link href="/admin/addhall">Add Hall</Nav.Link>
 
 
           </Nav>
