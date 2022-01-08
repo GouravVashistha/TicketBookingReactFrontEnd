@@ -84,8 +84,9 @@ class Registration extends Component {
                                     }
                                     axios.post("http://localhost:8080/usersregistration", user, options).then((res) => {
                                         console.log(res.data)
+                                        alert("Registration Successfully Completed")
                                     }).catch((err) => {
-                                        console.log("error has occured")
+                                        alert("Please Try Again")
                                     })
                                 }}> Register </Button>
 

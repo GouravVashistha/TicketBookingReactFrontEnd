@@ -18,7 +18,7 @@ function Adminlogin(props) {
                     if (email === "abc@gmail.com" && password === "abc") {
                         localStorage.setItem('email', email)
                         navigate("/admin/home")
-                        console.log("login success")
+                        alert("login success")
                     }
                     else {
                         alert("WrongCredentials")
