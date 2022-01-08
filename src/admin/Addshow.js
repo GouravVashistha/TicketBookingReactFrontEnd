@@ -90,8 +90,9 @@ class Addshows extends Component {
                                 }
                                 axios.post("http://localhost:8080/addshow", Show, options).then((res) => {
                                     console.log(res.data)
+                                    alert("Added")
                                 }).catch((err) => {
-                                    console.log("error has occured")
+                                    alert("Not Added")
                                 })
                             }}>Add </button>
                         </div>

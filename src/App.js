@@ -12,6 +12,7 @@ import AddMovies from './admin/AddMovie';
 import Addshows from './admin/Addshow';
 import Addhall from './admin/Addhall';
 import Addhallcap from './admin/Addcap';
+import Booking from './MainComp/Booking'
 // import HomePage from './MainComp/HomePage';
 
 
@@ -27,6 +28,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/shows" element={<Shows />} />
+        <Route path="/booking" element={<Booking />} />
+
 
         <Route path="/admin/home" element={<AdminHome />} />
         <Route path="/admin/addmovie" element={<AddMovies />} />

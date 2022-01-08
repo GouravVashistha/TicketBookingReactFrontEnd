@@ -44,8 +44,9 @@ class AddMovies extends Component {
                                 }
                                 Axios.post("http://localhost:8080/addmovie", movie, option).then((res) => {
                                     console.log(res.data)
+                                    alert("Movie added successfuly")
                                 }).catch((err) => {
-                                    console.log("error has occured")
+                                    alert("Not Added")
                                 })
 
                             }}>Add Movie</button>

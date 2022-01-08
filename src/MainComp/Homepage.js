@@ -8,8 +8,6 @@ class Homepage extends Component {
                 <center>
                     <h1 class='header'>Book Your Tickets</h1>
                     <br /><br />
-
-
                     <Link to="/home" className='btn btnclick'>User Home</Link>
                     <Link to="/admin" onClick className='btn btnclick'>Admin Home</Link>
                 </center>
