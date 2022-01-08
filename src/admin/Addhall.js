@@ -80,9 +80,14 @@ class Addhall extends Component {
                             }
                             axios.post("http://localhost:8080/addhall", addHall, option).then((res) => {
                                 console.log(res.data)
+
                                 alert("Hall added successfully")
                             }).catch((err) => {
                                 alert("Try Again")
+
+                            }).catch((err) => {
+                                console.log("error has occured")
+
                             })
                         }}>Add </button>
                     </div>

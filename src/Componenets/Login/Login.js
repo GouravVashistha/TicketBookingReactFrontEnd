@@ -40,9 +40,7 @@ function Login(props) {
                                 axios.post("http://localhost:8080/Userlogin", user, options).then((res) => {
 
                                     localStorage.setItem('email', email)
-                                    alert("Login Success")
                                     navigate("/home")
-
 
                                 }).catch((err) => {
                                     alert("WrongCredentials")

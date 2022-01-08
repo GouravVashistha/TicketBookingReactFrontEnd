@@ -75,9 +75,19 @@ function Headerfile() {
             <Link to="/shows" className={classes.link}>
               Movies
             </Link>
-            <Link to="/booking" className={classes.link}>
-              Booking
+            <Link to="/about" className={classes.link}>
+              About
             </Link>
+
+            <Link to="/contact" className={classes.link}>
+              Contact
+            </Link>
+            {localStorage.getItem('email') ?
+              null
+              : <Link to="/login" className={classes.link}>
+                Login
+              </Link>
+            }
 
             {/* <Link to="/contact" className={classes.link}>
               Contact
