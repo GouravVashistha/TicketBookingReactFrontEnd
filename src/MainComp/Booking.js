@@ -4,6 +4,7 @@ import { Grid, TextField, Button, Card, CardContent, Typography } from '@materia
 import axios from 'axios'
 import React, { Component } from 'react';
 import Headerfile from '../Componenets/Header/Navbar';
+import CancelMovies from './Cancel';
 
 class Booking extends Component {
   constructor() {
@@ -122,6 +123,7 @@ class Booking extends Component {
                 </CardContent>
               </Card>
             </Grid>
+
           </div>
         </center>
       </div>

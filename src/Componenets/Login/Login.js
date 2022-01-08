@@ -11,6 +11,8 @@ import React from 'react';
 import Headerfile from '../Header/Navbar';
 
 function Login(props) {
+    // var loggedIn = false
+    const [loggedIn, setLoggedIn] = useState(false)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate();
@@ -23,9 +25,9 @@ function Login(props) {
                         <img className='icon-img' src={img1} alt='loginImg' />
                         <Form>
 
-                            <Form.Control className="mb-3" type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)} />
+                            <Form.Control className="mb-3" type="email" id="username" placeholder="Enter email" onChange={e => setEmail(e.target.value)} />
 
-                            <Form.Control className="mb-3" type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
+                            <Form.Control className="mb-3" type="password" id="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
 
                             <Button className='newbtn' variant="btn btn-primary btn-block" color="primary" size="sm" onClick={() => {
                                 var user = {
@@ -38,7 +40,7 @@ function Login(props) {
                                     }
                                 }
                                 axios.post("http://localhost:8080/Userlogin", user, options).then((res) => {
-
+                                    setLoggedIn(true)
                                     localStorage.setItem('email', email)
                                     navigate("/home")
 
