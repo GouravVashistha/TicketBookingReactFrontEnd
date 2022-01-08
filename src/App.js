@@ -11,6 +11,7 @@ import Homepage from './MainComp/Homepage';
 import AddMovies from './admin/AddMovie';
 import Addshows from './admin/Addshow';
 import Addhall from './admin/Addhall';
+import Addhallcap from './admin/Addcap';
 // import HomePage from './MainComp/HomePage';
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/admin/addmovie" element={<AddMovies />} />
         <Route path="/admin/addshow" element={<Addshows />} />
         <Route path="/admin/addhall" element={<Addhall />} />
+        <Route path="/admin/hallcap" element={<Addhallcap />} />
 
 
       </Routes>

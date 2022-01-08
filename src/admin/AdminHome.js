@@ -7,7 +7,8 @@ export default class AdminHome extends Component {
         return (
             <div>
                 <AdminNav />
-                <GetAllShows />
+
+
             </div>
         )
     }
