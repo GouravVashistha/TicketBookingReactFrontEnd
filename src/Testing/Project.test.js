@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Project from './project';
 
-// sir aap na yahi to padhaya hto hum as he to kraage!!
+
 
 test("welcome team component", () => {
     render(<Project />)
